@@ -1,0 +1,69 @@
+* {box-sizing: border-box;}
+img {max-width: 100%; display: block;}
+body {
+  font: 1.2em Helvetica, arial, sans-serif;
+}
+
+
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #00f08c;
+}
+
+h3 {
+  background-color: #00f08c;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #00f08c;
+  position: fixed; /* fixer la position du navbar */
+  top: 0; /* positionner le navbar en haut de la page */
+  width: 100%; /* toute  la largeur de l'ecran */
+}
+
+/* les liens dans le navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* changer l'arriere plan a chaque passement de souris*/
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.liste {
+  list-style: none;
+  margin-top: 100px;	
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
+ul .item{
+  border: 1px solid #00f08c;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.liste .description {
+  color: #00f08c;
+  margin-top: auto;
+  border-top: 1px solid #00f08c;
+  padding: 10px;
+  text-align: center;
+}
+.liste .image {
+  padding: 10px;
+}

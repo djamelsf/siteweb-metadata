@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.img-responsive {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 10px;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+/** blue: 3b84dc*/
+
+.menu {
+    background-color: rgb(15, 25, 24);
+    padding: 10px 0 20px 0;
+}
+
+.menu .container {
+    max-width: 1400px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-items {
+    display: flex;
+    margin: 0;
+}
+
+.navbar-logos {
+    margin: 0;
+}
+
+.nav-logo {
+    max-height: 50px;
+    align-self: center;
+}
+
+.navbar-items a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    margin: auto 1em;
+}
+
+.ham-icon {
+    display: none;
+    margin: auto 0px auto auto;
+    font-size: 24px;
+    color: white;
+}
+
+@media(max-width:768px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logos {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .ham-icon {
+        display: block;
+    }
+
+    .ham-icon:hover .navbar-items {
+        flex-direction: row;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+    }
+
+    .navbar-items a {
+        margin: 1em auto;
+    }
+}
+
+/*END NAVBAR*/
+
+.main-section-container {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-header h1 {
+    font-size: 4em;
+}
+
+.section-header img {
+    margin: auto .5em;
+    max-width: 50px;
+
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2em 1em;
+}
+
+.document-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.document-title {
+    margin: .75em 0;
+
+}
+
+.document-item img {
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.document-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+}
+
+.author {
+    color: #3b84dc;
+    font-weight: 500;
+    margin: 1em 0;
+    font-size: 18px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.price,
+.cart {
+    color: black;
+    font-size: 18px;
+    grid-column: 1;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.more-info {
+    background-color: rgb(15, 25, 24);;
+    margin: auto 0;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width:768px) {
+    .section-header h1 {
+        font-size: 1.5em;
+    }
+}
+
+/**end index**/
+
+.login-form {
+    display: flex;
+    align-self: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 60%;
+    margin-top: 1em;
+    flex-direction: column;
+}
+
+.login-form input {
+    display: flex;
+    border: none;
+    padding: 20px 5px;
+    background: #ebf3fb;
+    margin: 0em 0 1em;
+    border-radius: 5px;
+}
+
+.login-form label {
+    margin: .5em 0;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.login-btn {
+    background-color: #3b84dc;
+    margin: auto 0;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    max-width: 20%;
+}
+
+@media(max-width:768px) {
+    .login-form {
+        max-width: 100%;
+        align-self: unset;
+        width: unset;
+    }
+
+    .login-btn {
+        max-width: 100%;
+    }
+
+    .login-form label {
+        font-size: 18px;
+    }
+}
+
+.dashboard-titles {
+    display: grid;
+    grid-template-columns: 35% 35% 15% 15%;
+    background-color: #870304;
+    padding: 20 5px;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dashboard-titles p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin: auto 0;
+}
+
+.title {
+    grid-column: 1;
+}
+
+.d-author {
+    grid-column: 2;
+}
+
+.edit {
+    grid-column: 3;
+}
+
+.delete {
+    grid-column: 4;
+}
+
+
+.edit,
+.delete {
+    margin: 0 auto;
+}
+
+.dashboard-items {
+    display: grid;
+    grid-template-columns: 35% 35% 15% 15%;
+    background-color: none;
+    padding: 20 5px;
+    margin: 0;
+}
+
+.extra-dashboard .dashboard-items {
+    grid-template-columns: 50% 50%;
+}
+
+.dashboard-items:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+.dashboard-items p {
+    color: black;
+}
+
+@media(max-width:768px) {
+    .dashboard-titles {
+        grid-template-columns: 40% 40%;
+    }
+
+    .dashboard-items {
+        grid-template-columns: 40% 40% 10% 10%;
+    }
+
+    .dashboard-titles .edit,
+    .dashboard-titles .delete {
+        display: none;
+    }
+
+    .dashboard-titles p {
+        font-size: 18px;
+    }
+
+    .dashboard-titles .d-author {
+        margin: auto;
+    }
+
+}
+
+/**end dashboard**/
+.upload-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header-2 {
+    margin: auto;
+}
+
+.upload-form label {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 2em 0;
+}
+
+.upload-form input {
+    background: white;
+    border-radius: 5px;
+}
+
+.img-header {
+    display: flex;
+    margin: 2em 0;
+}
+
+.img-header div {
+    font-size: 24px;
+    margin: auto 0em auto 1em;
+}
+
+.img-header img {
+    border-radius: 5px;
+    margin: auto 1em auto 0em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:768px) {
+    .img-header {
+        flex-direction: column;
+    }
+
+    .img-header p {
+        margin: 1em 0;
+    }
+
+    .img-header img {
+        margin: 1em 0;
+    }
+}
+
+.file-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-form-item{
+    display: flex;
+    flex-direction: column;
+    margin: .5em 0;
+
+}
+.file-form-item label {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin: auto 0;
+}
+
+.file-form-item input {
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    max-width: 50%;
+    border: none;
+    padding: 10px 5px;
+    background: #ebf3fb;
+    margin: auto 0;
+    border-radius: 5px;
+}
+
+.validate-btn{
+    background-color: #3b84dc;
+    margin: auto 0;
+    border-radius: 5px;
+    padding: 1.5em 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: center;
+    max-width: 25%;
+    margin-top: 1em;
+}

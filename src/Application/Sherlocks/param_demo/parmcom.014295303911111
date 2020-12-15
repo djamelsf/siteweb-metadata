@@ -1,0 +1,36 @@
+###############################################################################
+#
+#	Fichier des param�tres du commercant
+#
+#	Remarque :	Ce fichier param�tre est sous la responsabilit� du
+#				commercant
+#
+###############################################################################
+
+
+# URL de retour automatique de la reponse du paiement
+
+AUTO_RESPONSE_URL!https://dev-lecarpentier.users.info.unicaen.fr/paiement/retourAuto.php!
+
+# URL de retour suite a paiement refuse
+
+CANCEL_URL!https://dev-21813169.users.info.unicaen.fr/dm2020/?a=paiementrefuse!
+
+# URL de retour suite a paiement accepte
+
+RETURN_URL!https://dev-21813169.users.info.unicaen.fr/dm2020/?a=paiementaccept!
+
+# Code devise  ( 978=EURO )
+
+CURRENCY!978!
+
+# Logo du commercant
+
+LOGO2!!
+
+# Liste des moyens de paiement accept�s
+
+PAYMENT_MEANS!CB,2,VISA,2,MASTERCARD,2!
+
+
+# END OF FILE

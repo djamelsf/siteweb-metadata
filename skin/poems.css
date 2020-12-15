@@ -1,0 +1,26 @@
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 60em;
+	margin: auto;
+
+
+}
+ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+figure {
+	float: right;
+	text-align: center;
+}
+
+.menu ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+

@@ -1,0 +1,46 @@
+#########################################################################
+#
+#	Pathfile 
+#
+#	Liste des fichiers parametres utilises par le module de paiement
+#
+#########################################################################
+#
+#
+#-------------------------------------------------------------------------
+# Activation (YES) / D�sactivation (NO) du mode DEBUG
+#-------------------------------------------------------------------------
+#
+DEBUG!NO!
+#
+# ------------------------------------------------------------------------
+# Chemin vers le r�pertoire des logos depuis le web alias  
+# Exemple pour le r�pertoire www.merchant.com/sherlocks/payment/logo/
+# indiquer:
+# ------------------------------------------------------------------------
+#
+D_LOGO!/dm2020/src/Application/Sherlocks/logos/!
+#
+# --------------------------------------------------------------------------
+#  Fichiers param�tres li�s a l'api sherlocks paiement	
+# --------------------------------------------------------------------------
+#
+# fichier des  param�tres sherlocks
+#
+F_DEFAULT!/users/21813169/www-dev/dm2020/src/Application/Sherlocks/param_demo/parmcom.sherlocks!
+#
+# fichier param�tre commercant
+#
+F_PARAM!/users/21813169/www-dev/dm2020/src/Application/Sherlocks/param_demo/parmcom!
+#
+# certificat du commercant
+#
+F_CERTIFICATE!/users/21813169/www-dev/dm2020/src/Application/Sherlocks/param_demo/certif!
+#
+# type du certificat
+#
+F_CTYPE!php!
+#
+# --------------------------------------------------------------------------
+# 	end of file
+# --------------------------------------------------------------------------
